@@ -1,4 +1,5 @@
 import "./Auth.css";
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
@@ -88,7 +89,7 @@ const Login = () => {
         <div className="auth-footer">
           <p>
             Don't have an account?{' '}
-            <a href="/register">Register here</a>
+            <Link to="/register">Register here</Link>
           </p>
         </div>
       </div>
